@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-h{
+    display: none;
+
+}
+
+.flex-container{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+.header .icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+
+.header .icon .face{
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.header .icon .face:hover{
+    color: rgb(14, 107, 229);
+}
+.header .icon .insta{
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.header .icon .insta:hover{
+    color: rgb(228, 64, 95); 
+}
+.header .icon .twitter{
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.header .icon .twitter:hover{
+    color: rgb(29, 155, 240);
+}
+.flex-container .bg-img{
+    background-image: url(/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 100vh;
+    
+}
+.logo-v img{
+    
+    height: 200px;
+}
+
+/*  section-style  */
+.section{
+    margin: 25px ;
+}
+.section h1{
+    font-family: 'Jomolhari', serif;
+    margin: 10px 0px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.navbar{
+    border-bottom: 2px solid #d3d3d6;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px 0px;
+    
+  
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.4s ease;
+}
+.navbar ul li a:hover{
+    color: orangered;
+}
+
+.section  .para{
+    line-height: 25px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d3d3d6;
+    font-weight: bold;
+    color: #000000;
+}
+
+footer p{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo-h {
+        display: inline-block;
+        
+    }
+    .logo-h img{
+        width: 140px;
+    }
+    .logo-v{
+        display: none;
+    }
+    .flex-container{
+        display:inline-block;
+    }
+    .flex-container .bg-img{
+        width: 93%;
+        height: 30vh;
+        margin: 0px 20px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .header .icon{
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 20px;
+
+    }
+    .header .icon .face{
+        margin: 0px 5px;
+    }
+    .header .icon .insta{
+        margin: 0px 5px;
+    }
+    .header .icon .twitter5{        margin: 0px 5px;
+    }
+
+}
+@media only screen and (max-width:575px) {
+    .header .icon{
+        display: none;
+    }
+    .header{
+        flex-direction: row;
+    }
+    .navbar ul{
+        display: inline;
+        margin: 0px 20px;
+    }
+    .navbar ul li{
+        margin-bottom: 15px;
+    }
+    .navbar ul li a{
+        font-size: 9px;
+    }
+    .section h1{ 
+        font-size: 30px;
+    }
+    .section  .para{
+        line-height: 22px;
+        font-size: 11px;
+        
+    }
+    footer p{
+        font-size: 7px;
+    }
+    .flex-container .bg-img{
+        width: 87%;
+        height: 30vh;
+        margin: 0px 20px;
+    }
+}
